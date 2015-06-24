@@ -12,6 +12,7 @@
     <script src="js/jquery.equalheights.js" type="text/javascript"></script>
     <script src="js/tms-0.3.js" type="text/javascript"></script>
     <script src="js/tms_presets.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 
     <title>Blog Futbolero | Login</title>
 </head>
@@ -108,26 +109,28 @@
             <div id="contenido">
 
                 <!-- Principal -->
-                <form id="contact-form">
+                <form name="fValida" action="" method="post" onsubmit="return validar()">
 
                     <p>
                         <label> INICIA SESION </label>
                     </p>
+                    
+                    <div id="contact-form">
+                        <p>
+                            <label>USUARIO:</label>
+                            <input type="text" name="User" id="User"><br>
+                        </p>
 
-                    <p>
-                        <label>USUARIO:</label>
-                        <input type="text" name="User" id="User"><br>
-                    </p>
-
-                    <p>
-                        <label>CONTRASEÑA:</label>
-                        <input type="password" name="Password" id="Password"><br>
-                    </p>
-
-                    <p>
+                        <p>
+                            <label>CONTRASEÑA:</label>
+                            <input type="password" name="Password" id="Password"><br>
+                        </p>
+                    </div>
+                    
+                    <div class="buttons">
                         <button><a href="">INGRESA</a></button>
-                        <button><a href="registra.html">REGISTRATE</a></button>
-                    </p>
+                        <button><a href="registra.html">REGISTRAR</a></button>
+                    </div>
 
                 </form>
                 <!-- /Principal -->

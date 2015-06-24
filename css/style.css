@@ -11,7 +11,7 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#7f7f7f;min-
 .bg {width:100%; min-height:100%; background:url(../images/bg.jpg) center top no-repeat;}
 
 .main {
-	width:960px; 	
+	width:960px;
 	padding:0;
 	margin:0 auto;
 	font-size:13px;
@@ -295,8 +295,12 @@ border-bottom: 1px solid #004C99;
 }
 #myvideo{
 margin-bottom:30px;
-width: 700px;
-    height: 400px;
+width: 80%;
+    height: 45%;
+}
+.myimage{
+    width: 80%;
+    height: 45%;
 }
 		
 /****************************footer************************/
@@ -312,6 +316,34 @@ footer {
 #contenido #principal { float: left; width: 78%; }
 #contenido #secundario { float: right; width: 20%; }
         
-        
+        /**************Responsive**************/
 
-        
+
+@media only screen and (max-width: 600px), only screen and (max-device-width: 800px)
+{
+
+    .content {
+        width:70%;
+        padding: 2em 3em; }
+
+
+
+    #publicidad,#noticias,#secundario
+    {
+        visibility: hidden;
+        display: block;
+    }
+    #lateral{
+        display: none;
+    }
+
+
+    .slider-wrapper{
+
+        display: none;
+    }
+
+
+
+}
+
